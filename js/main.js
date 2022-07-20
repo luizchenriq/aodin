@@ -1,6 +1,7 @@
 (function ($) {
     "use strict";
     
+/*
     // Dropdown on mouse hover
     $(document).ready(function () {
         function toggleNavbarMethod() {
@@ -17,7 +18,7 @@
         toggleNavbarMethod();
         $(window).resize(toggleNavbarMethod);
     });
-    
+*/    
     
     // Back to top button
     $(window).scroll(function () {
@@ -31,8 +32,12 @@
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
     });
+document.querySelector('.nav-link').scrollIntoView({ 
+  behavior: 'smooth' 
+});
 
 
+/*
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
         delay: 10,
@@ -81,6 +86,7 @@
             }
         }
     });
+*/
     
 })(jQuery);
 
